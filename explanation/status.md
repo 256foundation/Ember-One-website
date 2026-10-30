@@ -1,4 +1,4 @@
-# Where Ember One Is Today
+# Where EMBER ONE Is Today
 
 Ember One is a published reference design. Boards have been built
 and have run real hashrate. This page says what is in hand, what
@@ -60,7 +60,7 @@ run real hashrate, stands either way.
 - Boards for sale from the 256 Foundation. The Foundation does not
   manufacture or sell Ember One.
 
-## Is Ember One for you yet?
+## Is EMBER ONE for you yet?
 
 **Read or build on the design: the files are published.** Start
 with [Design files](/reference/design-files) and

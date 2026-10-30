@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress'
 // (served at /).
 const base = process.env.DOCS_BASE || '/'
 
-const title = 'Ember One'
+const title = 'EMBER ONE'
 const description = 'Open source Bitcoin mining hashboard reference design'
 
 export default defineConfig({
@@ -79,8 +79,8 @@ export default defineConfig({
       {
         text: 'Explanation',
         items: [
-          { text: 'Why Ember One', link: '/explanation/why-ember-one' },
-          { text: 'Where Ember One Is Today', link: '/explanation/status' }
+          { text: 'Why EMBER ONE', link: '/explanation/why-ember-one' },
+          { text: 'Where EMBER ONE Is Today', link: '/explanation/status' }
         ]
       },
       {

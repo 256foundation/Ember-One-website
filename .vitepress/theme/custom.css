@@ -70,11 +70,9 @@
   --ember-hero-tint: rgba(76, 170, 120, 0.08);
 }
 
-/* Wordmark: Space Mono Bold on the hero name only. "Ember One"
-   is longer than a one-word name, so the size stays under the
-   width of the text column. Tracking stays at the font's own
-   rhythm; the face is monospace and does not want Inter's tight
-   tracking. */
+/* Wordmark: Space Mono Bold on the hero name only. The text is
+   "EMBER ONE", not a CSS transform, so the same casing is in the
+   HTML. Tracking stays at the font's own rhythm. */
 .VPHome .VPHero .name.clip {
   font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   font-weight: 700;

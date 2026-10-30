@@ -75,7 +75,9 @@ in the design repos.
 - Status is plain declaratives, a "current as of" date, and no
   promised dates.
 - The words "honest" and "honestly" do not appear in site copy.
-- Spell the project "Ember One" and the board "EmberOne/00".
+- Spell the project "EMBER ONE" in the hero, the nav title, the
+  site and social title, and any heading. Running prose keeps
+  "Ember One". Spell the board "EmberOne/00".
 - Never say Mujina was "ported" to the board. A driver for the
   board is added to Mujina.
 - When a page mentions Telehash, say the stack demonstrated

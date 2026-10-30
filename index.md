@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Ember One
+  name: EMBER ONE
   text: Open source Bitcoin mining hashboard reference design
   tagline: >-
     Published PCB files, bill of materials, and interface, for anyone
@@ -48,7 +48,7 @@ features:
     linkText: Design files
 ---
 
-## What is Ember One?
+## What is EMBER ONE?
 
 Ember One is an open-source reference design for a Bitcoin mining
 hashboard. A hashboard is the circuit board that hosts ASIC chips

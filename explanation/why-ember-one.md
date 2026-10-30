@@ -1,4 +1,4 @@
-# Why Ember One
+# Why EMBER ONE
 
 This page is the context behind Ember One: what the project is for,
 and what it refuses to be.
