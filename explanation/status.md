@@ -1,0 +1,86 @@
+# Where Ember One Is Today
+
+Ember One is a published reference design. Boards have been built
+and have run real hashrate. This page says what is in hand, what
+is not, and how to decide whether to use the files.
+
+::: info Current as of October 2026
+This page tracks a moving project. [Follow the
+work](#follow-the-work) lists where change shows up.
+:::
+
+## What exists
+
+The EmberOne/00 repository records revisions from v1 through v6.1.
+The newest named revision is v6.1, last commit 2026-03-21. See
+[Revisions](/reference/revisions).
+
+::: warning Open question
+`[TBD: confirm with Skot - is rev 6.1 the current board]`
+
+These pages describe the v6.1 files. They do not call v6.1 the
+current board until that is confirmed. The only GitHub Release is
+still v3, from 2025-04-30, and `master` does not point at v6.1.
+:::
+
+Boards have been fabricated, brought up, and run real hashrate
+against a real pool. At Telehash #2 (May 5, 2025) an early board
+hashed live to an early Hydrapool instance. At Telehash #3
+(January 21, 2026) Ember One hashboards, driven by Libre Board and
+running Mujina, mined into a self-hosted Hydrapool. The full stack
+demonstrated working end-to-end at the Foundation's own event.
+
+Mujina mainline includes an EmberOne/00 driver. The [compatibility
+matrix](https://mujina.org/reference/hardware-compatibility) lists
+it as working, and says the driver is being reworked.
+
+## Validation
+
+::: warning Open question
+`[TBD: confirm with Skot and Tyler - validation status wording]`
+
+The Canon says no revision has been through a validation campaign,
+and that the Foundation does not encourage production. A September
+2025 newsletter called v4 production-ready. This page does not
+choose between those wordings. The sentence above, that boards have
+run real hashrate, stands either way.
+:::
+
+## What does not exist yet
+
+- A GitHub Release newer than
+  [v3](https://github.com/256foundation/emberone00-pcb/releases/tag/v3-release)
+  (2025-04-30). Later revisions are branches.
+- A measured hashrate for revision 6.1. The v6.1 README states
+  targets with the word "should". Whether this site should quote a
+  number at all is [open](/reference/specifications#hashrate).
+- A build guide for the v6.1 design. `assembly.md` is on the v3
+  release and on `master`. It is not on v6.1. This site does not
+  reprint it.
+- Boards for sale from the 256 Foundation. The Foundation does not
+  manufacture or sell Ember One.
+
+## Is Ember One for you yet?
+
+**Read or build on the design: the files are published.** Start
+with [Design files](/reference/design-files) and
+[Specifications](/reference/specifications). The open questions on
+those pages are still open.
+
+**Buy a board: no.** The 256 Foundation does not manufacture or
+sell boards. This site is not a catalog, and it names no seller.
+
+**Run the firmware:** use [Mujina](/howto/run-with-mujina). This
+site has no Ember One procedure of its own.
+
+## Follow the work
+
+- [emberone00-pcb issues](https://github.com/256foundation/emberone00-pcb/issues)
+- [Ember One on the forum](https://forum.256foundation.org/c/ember-one/5)
+- [Community](/community), including the open question about
+  Telegram
+
+## See also
+
+- [Why Ember One](/explanation/why-ember-one)
+- [Revisions](/reference/revisions)
