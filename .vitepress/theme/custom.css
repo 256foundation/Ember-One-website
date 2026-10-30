@@ -9,8 +9,11 @@
  * background. Dark-mode brand buttons use dark text, because white
  * text on that green fails contrast.
  *
- * The hero name is typeset text, not a logo. There is no Ember One
- * wordmark in the design repository beyond a small silkscreen mark.
+ * The hero name and the nav-bar site title use Space Mono Bold,
+ * self-hosted from @fontsource/space-mono (latin, weight 700,
+ * font-display: swap). The OFL notice is
+ * .vitepress/theme/fonts/SpaceMono-OFL.txt. Everything else stays
+ * Inter. There is no Ember One logo file; this is typeset text.
  */
 
 :root {
@@ -67,15 +70,23 @@
   --ember-hero-tint: rgba(76, 170, 120, 0.08);
 }
 
-/* Text wordmark: the hero name, large, in the site face. Not a
-   logo file. "Ember One" is longer than a one-word name, so the
-   size stays under the width of the text column. */
+/* Wordmark: Space Mono Bold on the hero name only. "Ember One"
+   is longer than a one-word name, so the size stays under the
+   width of the text column. Tracking stays at the font's own
+   rhythm; the face is monospace and does not want Inter's tight
+   tracking. */
 .VPHome .VPHero .name.clip {
-  font-family: var(--vp-font-family-base);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  font-size: 44px;
-  line-height: 1.05;
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+/* Same face on the nav-bar site title, and nowhere else. */
+.VPNavBar .VPNavBarTitle .title {
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
 }
 
 @media (min-width: 640px) {

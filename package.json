@@ -9,6 +9,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@fontsource/space-mono": "^5.3.0",
     "vitepress": "^1.6.0"
   }
 }

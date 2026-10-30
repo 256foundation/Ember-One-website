@@ -95,9 +95,11 @@ in the design repos.
   person as the face of this site.
 - Register: plain technical English, like a good man page. Short
   verbs. No metaphor. One assertion per sentence.
-- The hero name is typeset text. Do not add a logo file that
-  pretends to be an official mark. The favicon and social card are
-  drafts for review.
+- The hero name and the nav-bar site title are Space Mono Bold
+  (700), self-hosted. Do not apply that face to body text, and do
+  not load it from a font CDN. Everything else stays Inter. Do not
+  add a logo file that pretends to be an official mark. The
+  favicon and social card are drafts for review.
 
 ## Deployment
 
