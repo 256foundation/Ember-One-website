@@ -6,25 +6,41 @@ happen in public.
 
 ## Where things happen
 
-- **[Design repository][pcb]**: KiCad files, issues, and pull
-  requests. The link goes to the `v6.1` branch. Whether that should
-  be a release instead is [open](/reference/design-files#which-files-to-link).
+GitHub holds the design work. The forum is the conversation around
+that work. Telegram is the 256 Foundation's public group chat.
+
+- **[Design repository][pcb]**: bug reports with reproducible
+  technical detail, KiCad file issues, pull requests, and formal
+  design reviews. The link goes to the `v6.1` branch. Whether that
+  should be a release instead is
+  [open](/reference/design-files#which-files-to-link).
 - **[USB-serial firmware][fw]**: the RP2040 firmware.
-- **[Forum][forum]**: the Ember One category.
+- **[Forum][forum-home]**, including the Ember One
+  [category][ember-forum]. The category is for the conversation
+  listed below.
+- **[Telegram][telegram]**: the Foundation's public group chat.
 
 [pcb]: https://github.com/256foundation/emberone00-pcb/tree/v6.1
 [fw]: https://github.com/256foundation/emberone-usbserial-fw
-[forum]: https://forum.256foundation.org/c/ember-one/5
+[forum-home]: https://forum.256foundation.org
+[ember-forum]: https://forum.256foundation.org/c/ember-one/5
+[telegram]: https://t.me/the256foundation
 
-::: warning Open question
-`[TBD: confirm with Tyler - include Telegram among the community links]`
+## The Ember One forum category
 
-The previous emberone.org page linked `t.me/the256foundation` and
-called it the forum. The forum is the category above.
-[mujina.org](https://mujina.org/community) lists that Telegram group
-as its own channel. This page leaves it out until the choice is
-confirmed.
-:::
+Use the [category][ember-forum] for:
+
+- **Build questions and assembly help.** Hand-building tips, sourcing
+  components, and ASIC variant compatibility.
+- **Hardware troubleshooting.** Debugging boards, thermal problems,
+  and power-supply setups.
+- **Testing and benchmarking.** Results, hashrate, and power draw.
+- **Forks and derivatives.** A spin on the design, or a question
+  about the form factor or a different ASIC.
+- **Roadmap and future ASIC variants.** Which chips people want
+  supported. A formal design proposal belongs as a GitHub issue.
+- **Integration.** Pairing Ember One with Libre Board, Mujina, and
+  the rest of the open mining stack.
 
 ## Contributing
 

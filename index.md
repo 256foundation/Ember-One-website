@@ -84,16 +84,8 @@ board until that is confirmed.
 - [USB-serial firmware on GitHub](https://github.com/256foundation/emberone-usbserial-fw).
   This is the firmware on the board's RP2040. It is not the mining
   firmware.
-- [Ember One on the 256 Foundation forum](https://forum.256foundation.org/c/ember-one/5)
+- [Ember One on the forum](https://forum.256foundation.org/c/ember-one/5)
+- [Telegram](https://t.me/the256foundation), the 256 Foundation's
+  public group chat
 - Sister projects: [Mujina](https://mujina.org),
   [Libre Board](https://libreboard.org)
-
-::: warning Open question
-`[TBD: confirm with Tyler - include Telegram among the community links]`
-
-The previous emberone.org page linked `t.me/the256foundation` and
-called that link the forum. The forum is the category above.
-[mujina.org](https://mujina.org/community) lists the Telegram group
-as its own channel. This site leaves the group out until that choice
-is confirmed.
-:::

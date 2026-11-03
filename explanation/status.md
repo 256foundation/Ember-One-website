@@ -77,8 +77,8 @@ site has no Ember One procedure of its own.
 
 - [emberone00-pcb issues](https://github.com/256foundation/emberone00-pcb/issues)
 - [Ember One on the forum](https://forum.256foundation.org/c/ember-one/5)
-- [Community](/community), including the open question about
-  Telegram
+- [Community](/community), including the Foundation's Telegram group
+  chat
 
 ## See also
 
