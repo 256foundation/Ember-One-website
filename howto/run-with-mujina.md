@@ -5,13 +5,8 @@ Mining firmware for the EmberOne/00 is
 procedure or a bring-up procedure for Ember One. No such procedure
 is in the design repository.
 
-Mujina's [hardware compatibility
-matrix](https://mujina.org/reference/hardware-compatibility),
-current as of July 2026 on that page, lists the EmberOne/00 as
-working in mainline. The same page says the driver is being
-reworked. Mujina's [status
-page](https://mujina.org/explanation/status) says the same thing:
-mainline support for the EmberOne/00 is being reworked.
+Initial support for EmberOne/00 is in Mujina. Further development
+and optimization are ongoing.
 
 Start from Mujina's own docs:
 

@@ -4,7 +4,7 @@ Ember One is a published reference design. Boards have been built
 and have run real hashrate. This page says what is in hand, what
 is not, and how to decide whether to use the files.
 
-::: info Current as of October 2026
+::: info Current as of November 4, 2026
 This page tracks a moving project. [Follow the
 work](#follow-the-work) lists where change shows up.
 :::
@@ -12,16 +12,8 @@ work](#follow-the-work) lists where change shows up.
 ## What exists
 
 The EmberOne/00 repository records revisions from v1 through v6.1.
-The newest named revision is v6.1, last commit 2026-03-21. See
+The latest revision is v6.1. This site describes those files. See
 [Revisions](/reference/revisions).
-
-::: warning Open question
-`[TBD: confirm with Skot - is rev 6.1 the current board]`
-
-These pages describe the v6.1 files. They do not call v6.1 the
-current board until that is confirmed. The only GitHub Release is
-still v3, from 2025-04-30, and `master` does not point at v6.1.
-:::
 
 Boards have been fabricated, brought up, and run real hashrate
 against a real pool. At Telehash #2 (May 5, 2025) an early board
@@ -30,9 +22,9 @@ hashed live to an early Hydrapool instance. At Telehash #3
 running Mujina, mined into a self-hosted Hydrapool. The full stack
 demonstrated working end-to-end at the Foundation's own event.
 
-Mujina mainline includes an EmberOne/00 driver. The [compatibility
-matrix](https://mujina.org/reference/hardware-compatibility) lists
-it as working, and says the driver is being reworked.
+Initial support for EmberOne/00 is in Mujina. Further development
+and optimization are ongoing. See [Run with
+Mujina](/howto/run-with-mujina).
 
 ## Validation
 
@@ -51,9 +43,9 @@ run real hashrate, stands either way.
 - A GitHub Release newer than
   [v3](https://github.com/256foundation/emberone00-pcb/releases/tag/v3-release)
   (2025-04-30). Later revisions are branches.
-- A measured hashrate for revision 6.1. The v6.1 README states
-  targets with the word "should". Whether this site should quote a
-  number at all is [open](/reference/specifications#hashrate).
+- A measured hashrate for revision 6.1. The theoretical nominal
+  hashrate is 3.6 TH/s. It still needs verification on rev6.1. See
+  [Hashrate](/reference/specifications#hashrate).
 - A build guide for the v6.1 design. `assembly.md` is on the v3
   release and on `master`. It is not on v6.1. This site does not
   reprint it.
@@ -64,8 +56,8 @@ run real hashrate, stands either way.
 
 **Read or build on the design: the files are published.** Start
 with [Design files](/reference/design-files) and
-[Specifications](/reference/specifications). The open questions on
-those pages are still open.
+[Specifications](/reference/specifications). Review the
+[validation status](#validation) before using the files.
 
 **Buy a board: no.** The 256 Foundation does not manufacture or
 sell boards. This site is not a catalog, and it names no seller.

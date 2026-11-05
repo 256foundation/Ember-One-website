@@ -61,26 +61,22 @@ drive the hashboard.
 The first board, EmberOne/00, is a 100 W hashboard with twelve
 Bitmain BM1362 ASICs powered in series. It is only the hashboard. A
 separate USB-connected control board, such as [Libre
-Board](https://libreboard.org), runs the firmware.
+Board](https://libreboard.org), runs mining firmware such as
+[Mujina](https://mujina.org).
 
 The picture above is the KiCad render shipped in the
 [v6.1 design files](https://github.com/256foundation/emberone00-pcb/tree/v6.1).
 It is not a photograph of a built board.
 
-::: warning Open question
-`[TBD: confirm with Skot - is rev 6.1 the current board]`
-
-v6.1 is the newest named revision in the design repository. The last
-commit on that branch is 2026-03-21. This site describes those files.
-It does not claim v6.1 is the revision to present as the current
-board until that is confirmed.
-:::
+v6.1 is the latest revision of EmberOne/00. This site describes
+those design files.
 
 ## Find the project
 
 - [Design files on GitHub](https://github.com/256foundation/emberone00-pcb/tree/v6.1),
-  branch `v6.1`. Whether that branch link should stay is an [open
-  question](/reference/design-files#which-files-to-link).
+  branch `v6.1`. The link stays on this branch until the revision
+  is verified and released. See [Design
+  files](/reference/design-files#which-files-to-link).
 - [USB-serial firmware on GitHub](https://github.com/256foundation/emberone-usbserial-fw).
   This is the firmware on the board's RP2040. It is not the mining
   firmware.

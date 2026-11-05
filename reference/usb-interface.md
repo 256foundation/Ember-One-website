@@ -33,9 +33,10 @@ repository's README. This page does not copy them.
 
 ## License
 
-The firmware repository's `LICENSE` file is GPL-3.0. Its
-`Cargo.toml` says `MIT`. Which one to state is an [open
-question](/community#license).
+The firmware is licensed under [GNU
+GPLv3](https://github.com/256foundation/emberone-usbserial-fw/blob/main/LICENSE).
+Its Cargo package license is `GPL-3.0-only`. See
+[License](/community#license).
 
 ## See also
 
