@@ -30,6 +30,12 @@ The v6.1 README links to `assembly.md`. That file is not on the
 branch. Adding assembly documentation for rev6.1 is tracked in
 [issue #60](https://github.com/256foundation/emberone00-pcb/issues/60).
 
+The published design does not include a heatsink or a water block.
+You provide cooling for the ASICs and the power MOSFETs. The
+hashboard has no fan connector. See
+[Cooling](/reference/specifications#cooling). The files are not a
+ready-to-run assembly.
+
 ## Manufacturing outputs
 
 Pre-generated manufacturing files are no longer provided. Users

@@ -25,7 +25,7 @@ files](/reference/design-files).
 | Board controller | RP2040, running [emberone-usbserial-fw](https://github.com/256foundation/emberone-usbserial-fw) |
 | Host interface | USB, to a separate control board |
 | Temperature sensors | TMP1075 and TMP451 on the v6.1 schematic. The [Mujina driver](https://github.com/256foundation/mujina) reads both. |
-| Cooling | Cooling for the ASICs and power MOSFETs must be supplied separately. The hashboard has no fan connector. [Libre Board](https://libreboard.org) is one control board option with fan connectors. |
+| Cooling | No heatsink or water block is included. You provide cooling for the ASICs and the power MOSFETs. The hashboard has no fan connector. See [Cooling](#cooling). |
 | Design tool | [KiCad](https://www.kicad.org) |
 | License | Hardware: CERN-OHL-S-2.0. USB-serial firmware: [GPLv3](/community#license). |
 
@@ -50,6 +50,18 @@ The theoretical nominal hashrate is **3.6 TH/s**.
 This is a theoretical figure, not a measured result for rev6.1.
 Hardware verification on this revision is still required.
 :::
+
+## Cooling
+
+Ember One does not yet include a heatsink or a water block. For
+development and testing, you design, adapt, or provide the cooling
+yourself. It has to serve the ASICs and the power MOSFETs.
+
+The hashboard has no fan connector. A separate control board, such
+as [Libre Board](https://libreboard.org), may have fan connectors
+of its own. Those connectors are on the control board. They are
+not a heatsink or a water block for this hashboard, and they are
+not a validated thermal design.
 
 ## Validation
 

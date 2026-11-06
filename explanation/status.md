@@ -49,6 +49,10 @@ run real hashrate, stands either way.
 - A build guide for the v6.1 design. `assembly.md` is on the v3
   release and on `master`. It is not on v6.1. This site does not
   reprint it.
+- A heatsink or water-block design. None is included yet. You
+  provide the cooling for development and testing. The hashboard
+  has no fan connector. See
+  [Cooling](/reference/specifications#cooling).
 - Boards for sale from the 256 Foundation. The Foundation does not
   manufacture or sell Ember One.
 

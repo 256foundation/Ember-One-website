@@ -91,10 +91,10 @@ in the design repos.
 - The hardware license is CERN-OHL-S-2.0. Do not state a firmware
   license while the USB-serial TBD is open.
 - Do not add a roadmap, a grant cycle, or a list of future ASICs.
-- Do not compare the board to Bitaxe. If a later edit adds that
-  comparison, it has to disclose that Bitaxe is earlier work by
-  Ember One's lead maintainer, and it still must not name that
-  person as the face of this site.
+- A Bitaxe comparison stays short and respectful, and it belongs
+  on the why page. Disclose that Bitaxe is earlier work by Skot,
+  Ember One's lead maintainer. Do not make that person the face
+  of the site, and do not rank the projects.
 - Register: plain technical English, like a good man page. Short
   verbs. No metaphor. One assertion per sentence.
 - The hero name and the nav-bar site title are Space Mono Bold

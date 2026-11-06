@@ -64,6 +64,10 @@ separate USB-connected control board, such as [Libre
 Board](https://libreboard.org), runs mining firmware such as
 [Mujina](https://mujina.org).
 
+No heatsink or water block is part of the design yet. You provide
+the cooling for the ASICs and the power MOSFETs. The hashboard has
+no fan connector. See [Cooling](/reference/specifications#cooling).
+
 The picture above is the KiCad render shipped in the
 [v6.1 design files](https://github.com/256foundation/emberone00-pcb/tree/v6.1).
 It is not a photograph of a built board.
