@@ -1,43 +1,83 @@
-## Open Hashboard
-The Ember One is an [open-source](https://opensource.org/license/cern-ohl-s) Bitcoin mining hashboard, standardized Features include:
+# emberone.org
 
-* Power Consumption of ~100W
-* Input voltage range 12-24vdc
-* USB-C data communication
-* on-board temperature sensors
-* 125mm x 125mm form factor
+The source for [emberone.org](https://emberone.org), the website of
+the Ember One open source Bitcoin mining hashboard. The site is
+built with [VitePress](https://vitepress.dev) and deployed to
+GitHub Pages. The board design lives at
+<https://github.com/256foundation/emberone00-pcb>.
 
-<p align="center">
-<img width="500" src="assets/EmberOne00v3.jpg">
-</p>
+This branch replaces the previous Jekyll site. Git history keeps
+that copy. The live site does not change until Pages is switched
+to GitHub Actions and this work is merged. See [Deployment](#deployment).
 
-<br>
+## Run the site locally
 
-Check the GitHub repo linked below for the latest release. Ember One 00 is built with the Bitmain BM1362 ASICs. The current roadmap for future Ember One versions includes designs for an Intel BZM2 ASIC version, an Auradine ASIC version, and a Proto Mining ASIC version.
+You need Node.js and [just](https://just.systems/).
 
-## Resources
-[Ember One 00 PCB Github Repo](https://github.com/256-Foundation/emberone00-pcb/tree/master)
+```
+just install   # npm install
+just dev       # dev server with hot reload
+```
 
-[Ember One Serial USB Firmware](https://github.com/256-Foundation/emberone-usbserial-fw)
+Run `just` with no arguments to list the other recipes. Run `just
+checks` before you open a pull request. It builds the site and
+fails on dead internal links.
 
-Firmware support coming soon in [Mujina Firmware](https://mujina.org)
+`npm run dev` and `npm run build` are the same commands without
+`just`.
 
-Initial testing Ember One firmware support (hacked into) [PiAxe/Pyminer fork](https://github.com/skot/emberone-miner/tree/emberone-BM1362-support)
+## Where things are
 
-Separate USB connected control board required, support coming soon in [Libre Board](https://libreboard.org)
+- Pages are markdown, organized by [Diataxis](https://diataxis.fr)
+  mode: `howto/`, `reference/`, `explanation/`. There is no
+  `tutorial/` yet. `index.md` is the landing page. `community.md`
+  sits outside the modes.
+- Nav and sidebar: `.vitepress/config.mts`.
+- Theme: CSS-only overrides in `.vitepress/theme/custom.css`.
+- Images and other static assets: `public/`.
 
-[Emebr One Schematic Review Video](https://bitcointv.com/w/59cB1SEHPYZCdumE2MFnqF)
+Open questions are left in the pages as `[TBD: …]` warnings. Do
+not delete one unless the question is answered.
 
+## Contributing
 
-## Motivation
-The Bitcoin mining industry has been dominated by Bitmain and their closed proprietary hardware and many Bitcoiners have accepted this despite the open nature of the protocol and the applications built on it. Up until the Bitaxe project, there were no open source options at all. Ember One takes what the Bitaxe started to the next level, bringing the total Wattage to ~100W. A small but important step in the direction of open-source options. Each six-month Ember One grant cycle will bring a new version that supports a different ASIC chip but all version will fit the same standardized form factor. Components for the Ember One have been chosen to give end users the most flexibility and ease of use. For example, the input voltage ranges from 12-24 vdc and the control board communicates via USB to the hashboards. Users will have the options of running one hashboard or several hashboards, they can choose which ASIC chips they want, and all the pieces will be interchangeable.
+Pull requests are welcome. [CONTRIBUTING.md](CONTRIBUTING.md)
+covers the workflow and commit messages. [AGENTS.md](AGENTS.md)
+records the site's content conventions: the organization, the
+prose register, and what a page may claim.
 
-If this sounds like a grant you want to support, then send The 256 Foundaton a tax deductible donation [here](https://pay.zaprite.com/pl_ZRWeSGjRWG)! Or use The 256 Foundation [PayNym](https://paynym.rs/+appetizingadministration90)!
+## Deployment
 
-## Community Support
-For help with Ember One, please use [The 256 Foundation public forum](https://t.me/the256foundation) on Telegram.
+`.github/workflows/deploy.yml` builds and deploys on push to
+`main`. One workflow serves both cases. `DOCS_BASE` is `/` when
+`GITHUB_REPOSITORY` is `256foundation/Ember-One-website`, and
+`/<repo-name>/` otherwise. The CNAME `emberone.org` is written
+into the built site only for that production repository. Forks do
+not get a CNAME, so a fork preview cannot take the production
+domain.
 
-## Team Members:
-Lead Engineer = [@skot9000](https://x.com/skot9000)
+The committed `CNAME` file stays in the repository. The workflow
+writes a second copy into the Pages artifact at build time.
 
-Project Manager = [@econoalchemist](https://x.com/econoalchemist)
+GitHub Pages does not build previews of branches. To preview on
+Pages, push the branch to a fork. The workflow then serves the
+site at `https://<user>.github.io/Ember-One-website/`.
+
+### Go-live
+
+The repository still uses GitHub's built-in Pages build. This
+branch does not change emberone.org.
+
+Go-live order:
+
+1. In the repository's Pages settings, set the source to GitHub
+   Actions.
+2. Merge this branch to `main`.
+
+The workflow is not on `main` until the merge, so do the two steps
+together. The merge push builds with base `/`, writes the CNAME
+into the Pages artifact, and deploys.
+
+Merging while Pages is still on the built-in Jekyll build would
+publish this tree through Jekyll instead of the workflow. Leave
+the built-in source in place until the moment of the switch.
