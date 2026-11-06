@@ -11,9 +11,9 @@ that work. Telegram is the 256 Foundation's public group chat.
 
 - **[Design repository][pcb]**: bug reports with reproducible
   technical detail, KiCad file issues, pull requests, and formal
-  design reviews. The link goes to the `v6.1` branch. Whether that
-  should be a release instead is
-  [open](/reference/design-files#which-files-to-link).
+  design reviews. The link stays on the `v6.1` branch until the
+  revision is verified and released. See
+  [Design files](/reference/design-files#which-files-to-link).
 - **[USB-serial firmware][fw]**: the RP2040 firmware.
 - **[Forum][forum-home]**, including the Ember One
   [category][ember-forum]. The category is for the conversation
@@ -77,11 +77,6 @@ The EmberOne/00 hardware design is licensed
 
 We started the work. Nobody owns it.
 
-::: warning Open question
-`[TBD: confirm with Skot - usbserial firmware license]`
-
 [emberone-usbserial-fw](https://github.com/256foundation/emberone-usbserial-fw)
-ships a GPL-3.0 `LICENSE` file. Its `Cargo.toml` sets
-`license = "MIT"`. This page does not pick one until that is
-confirmed. The hardware license above is not part of this question.
-:::
+is licensed under [GNU GPLv3](https://github.com/256foundation/emberone-usbserial-fw/blob/main/LICENSE).
+Its Cargo package license is `GPL-3.0-only`.

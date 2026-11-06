@@ -5,13 +5,9 @@ Named revisions of EmberOne/00 in
 Dates below are the dates of the branch, the release, or the
 commits that introduce the change.
 
-::: warning Open question
-`[TBD: confirm with Skot - is rev 6.1 the current board]`
-
-The table lists the revisions the repository records. It does not,
-by itself, decide which row this site should call current. v6.1 is
-the newest named revision. The only GitHub Release is v3.
-:::
+v6.1 is the latest revision of EmberOne/00. This site links its
+branch until the revision is verified and released. See
+[Design files](/reference/design-files#which-files-to-link).
 
 ## Recorded revisions
 
@@ -38,9 +34,9 @@ still says Mujina support is coming soon. Both statements are out
 of date. Mujina mainline already has an EmberOne/00 driver. See
 [Run with Mujina](/howto/run-with-mujina).
 
-The input range printed on v6.1, and whether to publish a hashrate
-at all, are open. See
-[Specifications](/reference/specifications).
+The v6.1 input range and theoretical nominal hashrate are listed
+in [Specifications](/reference/specifications). The nominal
+hashrate still needs verification on rev6.1.
 
 ## See also
 
