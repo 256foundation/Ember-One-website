@@ -89,3 +89,4 @@ those design files.
   public group chat
 - Sister projects: [Mujina](https://mujina.org),
   [Libre Board](https://libreboard.org)
+- A project of the [256 Foundation](https://256foundation.org)
