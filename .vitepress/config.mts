@@ -31,7 +31,10 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '48x48', href: `${base}favicon-pcb-48.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${base}favicon-pcb-32.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${base}favicon-pcb-16.png` }],
+    ['link', { rel: 'icon', href: `${base}favicon-pcb.ico` }],
     // Social link previews. og:image requires an absolute URL, so it
     // points at production even in a fork preview. The card is a text
     // wordmark plus the v6.1 board render. It is a draft for review,
