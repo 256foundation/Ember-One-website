@@ -28,15 +28,8 @@ Mujina](/howto/run-with-mujina).
 
 ## Validation
 
-::: warning Open question
-`[TBD: confirm with Skot and Tyler - validation status wording]`
-
-The Canon says no revision has been through a validation campaign,
-and that the Foundation does not encourage production. A September
-2025 newsletter called v4 production-ready. This page does not
-choose between those wordings. The sentence above, that boards have
-run real hashrate, stands either way.
-:::
+Ember One is under active development. Revision 6.1 still requires
+board validation and measured performance testing.
 
 ## What does not exist yet
 
